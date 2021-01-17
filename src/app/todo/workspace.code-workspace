@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\..\\Angular"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\animal crossing angular"
+		},
+		{
+			"path": "..\\..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\tiiangdemo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "angular-lab-one"
+	}
+}
