@@ -1,19 +1,18 @@
-<h1>TO DO List</h1>
-<div></div>
-<h3> A place to store your todos</h3>
-<button class="button1">Filter your to dos</button>
-<div class="todo-list">
-    <button type="submit" id="submit">Add</button>
-    <ol>
-        <!-- // The ngForOf Directive must be used
-        // goal to set text decoration style = line through, with ternary operator. left is true and right is false. -->
-        <li *ngFor="let todo of todos" [ngStyle]="{'text-decoration': todo.completed ? 'line-through' : 'none'}">
-            <!-- //looping each todo -->
-             <button class="add-button" (click)="completetask(todo)"> Complete</button>
-             {{todo.task}}
-             <button class="delete-button"> X </button>
+<section id="todoComponent">
+    <h1>ToDo List</h1>
 
-             
-        </li>
-    </ol> 
-</div>
+    <input [(ngModel)]="filterString" placeholder="Filter your to-dos" class="filter">
+<ol>
+    <li *ngFor="let task of getFilteredResults()">
+        <!-- display task and completed status-->
+        <div class="task">
+        <span [ngClass]="{ completed: task.completed}">
+            <button *ngIf="!task.completed" class="compBtn" (click)="completeTask(task)">Completed</button> {{task.task}}
+        </span>
+        <button (click)="deleteTask(task)" class="deleteBtn">X</button>
+        </div>
+    </li>
+</ol>
+<input [(ngModel)]="newTask" placeholder="Add your to-to" id="new-todo">
+<button id="add-todo" (click)="addToList(newTask)">Add</button>
+</section>

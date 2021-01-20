@@ -1,13 +1,52 @@
-/* {
-    Font-family:Open Sans;
-    Font-weight: 300;
-    //Body Background: linearGradient;//(toright, #f857a6,#ff5858);
-    //Icons: 
+.completed {
+    text-decoration: line-through;
+}
 
-}*/
+.task{
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 5px 4px 0;
+    border-bottom: #eee solid 1px;
+    
+}
 
-.add-button{
-    background-color: lightblue;
-} 
+h1{
+    margin-left: 20px;
+    font-weight: bold;
+}
 
+#todoComponent{
+    background-color: white;
+    width: 75%;
+    margin: 10px auto;
+    padding: 2px 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
 
+.compBtn{
+    border: #ff69b4 solid 1px;
+    border-radius: 5px;
+    background-color: inherit;
+    color: #ff69b4;
+}
+
+input{
+    width: 95%;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border: #eee solid 1px;
+
+    
+}
+
+.deleteBtn{
+    border-style: none;
+    background-color: transparent;
+}
+
+#add-todo{
+    width: 95%;
+    margin: 10px 20px;
+    background-color: #ff1493;
+    color: #eee;
+}
